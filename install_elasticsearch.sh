@@ -16,9 +16,6 @@ yum install -y elasticsearch
 service elasticsearch restart
 chkconfig elasticsearch on
 
-curl -X GET http://localhost:9200/
-
-
 yum install -y httpd
 cd /tmp
 wget https://download.elasticsearch.org/kibana/kibana/kibana-3.0.0milestone4.tar.gz
@@ -27,3 +24,6 @@ mv kibana-3.0.0milestone4 /var/www/html/kibana
 
 service httpd restart
 chkconfig httpd on
+
+curl -X GET http://localhost:9200/
+
