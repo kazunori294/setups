@@ -3,7 +3,7 @@ curl -L http://toolbelt.treasuredata.com/sh/install-redhat.sh | sh
 
 cp /etc/td-agent/td-agent.con  /etc/td-agent/td-agent.con.bak
 
-echo << EOF  >> /etc/td-agent/td-agent.conf
+cat << EOF  >> /etc/td-agent/td-agent.conf
 
 <source> 
   type tail 
